@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Toza Oziq-ovqat va Mahsulotlar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>Oziq ovqat mahsulotlari</span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#products" class="nav-link">Mahsulotlar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Biz haqimizda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Aloqa</a>
+                    </li>
+                </ul>
+                <div class="nav-icons">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-shopping-cart">
+                        <span class="cart-count">0</span>
+                    </i>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Toza va Sifatli <span class="highlight">Mahsulotlar</span></h1>
+                <p>Eng yangi va toza meva-sabzavotlar, go'sht mahsulotlari, non va kiyim-kechaklar uyingizgacha yetkazib beramiz.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Hoziroq xarid qiling</button>
+                    <button class="btn btn-secondary">Katalogni ko'ring</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/fruits_vegetables_1.jpg" alt="Toza meva va sabzavotlar">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Tez yetkazib berish</h3>
+                    <p>24 soat ichida uyingizgacha yetkazib beramiz</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sifatli mahsulotlar</h3>
+                    <p>100% tabiiy va sifatli mahsulotlar</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Sifat kafolati</h3>
+                    <p>Yuqori sifat va toza mahsulotlar kafolati</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Qulay narxlar</h3>
+                    <p>Eng qulay narxlarda sifatli mahsulotlar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Mashhur Mahsulotlar</h2>
+                <p>Eng ko'p sotilayotgan va sifatli mahsulotlarimiz</p>
+            </div>
+            
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">Barchasi</button>
+                <button class="category-btn" data-category="fruits">Mevalar</button>
+                <button class="category-btn" data-category="vegetables">Sabzavotlar</button>
+                <button class="category-btn" data-category="meat">Go'sht</button>
+                <button class="category-btn" data-category="bread">Non</button>
+                <button class="category-btn" data-category="clothing">Kiyim</button>
+                <button class="category-btn" data-category="organic">Organik</button>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <!-- Mevalar -->
+                <div class="product-card" data-category="fruits">
+                    <div class="product-image">
+                        <img src="images/fruits_vegetables_1.jpg" alt="Toza mevalar">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Toza Mevalar To'plami</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">45,000 so'm</span>
+                            <span class="old-price">55,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fruits">
+                    <div class="product-image">
+                        <img src="images/fruits_vegetables_2.jpg" alt="Eksotik mevalar">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Eksotik Mevalar</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.7)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">85,000 so'm</span>
+                            <span class="old-price">95,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fruits">
+                    <div class="product-image">
+                        <img src="images/fruits_vegetables_3.jpg" alt="Mavsumiy mevalar">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mavsumiy Mevalar</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">35,000 so'm</span>
+                            <span class="old-price">42,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="fruits">
+                    <div class="product-image">
+                        <img src="images/fruits_vegetables_4.jpg" alt="Premium mevalar">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Mevalar</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">65,000 so'm</span>
+                            <span class="old-price">75,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sabzavotlar -->
+                <div class="product-card" data-category="vegetables">
+                    <div class="product-image">
+                        <img src="images/fruits_vegetables_3.jpg" alt="Organik sabzavotlar">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Organik Sabzavotlar</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">35,000 so'm</span>
+                            <span class="old-price">42,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vegetables">
+                    <div class="product-image">
+                        <img src="images/fruits_vegetables_2.jpg" alt="Toza sabzavotlar">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Toza Sabzavotlar</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.6)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">28,000 so'm</span>
+                            <span class="old-price">35,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vegetables">
+                    <div class="product-image">
+                        <img src="images/fruits_vegetables_4.jpg" alt="Mavsumiy sabzavotlar">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mavsumiy Sabzavotlar</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">32,000 so'm</span>
+                            <span class="old-price">38,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="vegetables">
+                    <div class="product-image">
+                        <img src="images/fruits_vegetables_1.jpg" alt="Premium sabzavotlar">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Sabzavotlar</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">48,000 so'm</span>
+                            <span class="old-price">55,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Go'sht mahsulotlari -->
+                <div class="product-card" data-category="meat">
+                    <div class="product-image">
+                        <img src="images/meat_1.png" alt="Toza go'sht">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Toza Mol Go'shti</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">120,000 so'm</span>
+                            <span class="old-price">135,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="meat">
+                    <div class="product-image">
+                        <img src="images/meat_2.jpg" alt="Premium go'sht">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Mol Go'shti</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">180,000 so'm</span>
+                            <span class="old-price">200,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="meat">
+                    <div class="product-image">
+                        <img src="images/meat_3.jpg" alt="Qo'y go'shti">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Toza Qo'y Go'shti</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.7)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">140,000 so'm</span>
+                            <span class="old-price">160,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="meat">
+                    <div class="product-image">
+                        <img src="images/meat_4.jpg" alt="Organik go'sht">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Organik Go'sht</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">220,000 so'm</span>
+                            <span class="old-price">250,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Non mahsulotlari -->
+                <div class="product-card" data-category="bread">
+                    <div class="product-image">
+                        <img src="images/bread_1.jpg" alt="Toza non">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Toza Non</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">8,000 so'm</span>
+                            <span class="old-price">10,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bread">
+                    <div class="product-image">
+                        <img src="images/bread_2.jpg" alt="Organik non">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Organik Non</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.6)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">12,000 so'm</span>
+                            <span class="old-price">15,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bread">
+                    <div class="product-image">
+                        <img src="images/bread_3.jpg" alt="Butun donli non">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Butun Donli Non</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">14,000 so'm</span>
+                            <span class="old-price">18,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="bread">
+                    <div class="product-image">
+                        <img src="images/bread_4.jpg" alt="Premium non">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Non</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">20,000 so'm</span>
+                            <span class="old-price">25,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kiyim-kechak -->
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img src="images/clothing_1.jpg" alt="Sifatli kiyim">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sifatli Kiyim</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">150,000 so'm</span>
+                            <span class="old-price">180,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img src="images/clothing_2.jpg" alt="Premium kiyim">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Kiyim</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.7)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">250,000 so'm</span>
+                            <span class="old-price">300,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img src="images/clothing_3.jpg" alt="Zamonaviy kiyim">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Zamonaviy Kiyim</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">200,000 so'm</span>
+                            <span class="old-price">240,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="clothing">
+                    <div class="product-image">
+                        <img src="images/clothing_4.png" alt="Brend kiyim">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Brend Kiyim</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">350,000 so'm</span>
+                            <span class="old-price">400,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Organik mahsulotlar -->
+                <div class="product-card" data-category="organic">
+                    <div class="product-image">
+                        <img src="images/fruits_vegetables_4.jpg" alt="Organik to'plam">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Organik To'plam</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">65,000 so'm</span>
+                            <span class="old-price">75,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="organic">
+                    <div class="product-image">
+                        <img src="images/meat_4.jpg" alt="Organik go'sht">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Organik Go'sht</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.8)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">220,000 so'm</span>
+                            <span class="old-price">250,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="organic">
+                    <div class="product-image">
+                        <img src="images/bread_2.jpg" alt="Organik non">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Organik Non</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.6)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">12,000 so'm</span>
+                            <span class="old-price">15,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card" data-category="organic">
+                    <div class="product-image">
+                        <img src="images/fruits_vegetables_3.jpg" alt="Organik sabzavotlar">
+                        <div class="product-overlay">
+                            <button class="btn-add-cart">
+                                <i class="fas fa-shopping-cart"></i>
+                            </button>
+                            <button class="btn-wishlist">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Organik Sabzavotlar</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">35,000 so'm</span>
+                            <span class="old-price">42,000 so'm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="load-more-container">
+                <button class="btn btn-primary" id="load-more-btn">Ko'proq ko'rish</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Biz Haqimizda</h2>
+                    <p>  Bu toza, sifatli va organik mahsulotlarni yetkazib berish xizmatida yetakchi kompaniya. Biz 2025-yildan beri mijozlarimizga eng yaxshi xizmatni taqdim etib kelmoqdamiz. Bizning assortimentimizda meva-sabzavotlar, go'sht mahsulotlari, non va kiyim-kechaklar mavjud.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>15,000+</h3>
+                            <p>Mamnun mijozlar</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1,000+</h3>
+                            <p>Mahsulot turlari</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100+</h3>
+                            <p>Yetkazib berish hududlari</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/fruits_vegetables_2.jpg" alt="Bizning jamoamiz">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Biz bilan bog'laning</h2>
+                <p>Savollaringiz bormi? Biz sizga yordam berishga tayyormiz!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Manzil</h3>
+                            <p>Toshkent shahar, Yunusobod tumani, Amir Temur ko'chasi 108</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Telefon</h3>
+                            <p>+998 90 123 45 67</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@freshmart.uz</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ismingiz" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email manzilingiz" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Xabaringiz" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Xabar yuborish</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span>FreshMart</span>
+                    </div>
+                    <p>Toza va sifatli mahsulotlarni yetkazib berish xizmatida yetakchi kompaniya.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Tez havolalar</h3>
+                    <ul>
+                        <li><a href="#home">Bosh sahifa</a></li>
+                        <li><a href="#products">Mahsulotlar</a></li>
+                        <li><a href="#about">Biz haqimizda</a></li>
+                        <li><a href="#contact">Aloqa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kategoriyalar</h3>
+                    <ul>
+                        <li><a href="#">Mevalar</a></li>
+                        <li><a href="#">Sabzavotlar</a></li>
+                        <li><a href="#">Go'sht mahsulotlari</a></li>
+                        <li><a href="#">Non mahsulotlari</a></li>
+                        <li><a href="#">Kiyim-kechak</a></li>
+                        <li><a href="#">Organik mahsulotlar</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Yordam</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Yetkazib berish</a></li>
+                        <li><a href="#">Qaytarish siyosati</a></li>
+                        <li><a href="#">Qo'llab-quvvatlash</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025  Oziq ovqat mahsulotlari uchun </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
